@@ -7,7 +7,8 @@ What is the aproximate probability distribution between the test group and the c
 Is a user that must call-in to cancel more likely to generate at least 1 addition REBILL?
 Is a user that must call-in to cancel more likely to generate more revenues?
 Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
-  **Visualization**
+ 
+ **Visualization**
 
 Create a dashboard using at least one of the tables in Section 3.1.
 Provide a link to an online version of the dashboard.
