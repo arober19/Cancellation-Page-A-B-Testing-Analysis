@@ -78,5 +78,20 @@ In this case since, revenue is a non-binomial metric the Mann-Whitney-Wilcoxon r
 
 ### Question 4:Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
 
+Taking the previusly merged samples data frame in Question 2 the chargeback rate per user which is the number of chargebacks divide by the number of rebills was calculated to be:
+
+|index|test\_group|chargeback\_rate|
+|---|---|---|
+|0|0|0\.05504505835426208|
+|1|1|0\.016683230270906946|
+
+Which when plotted out looks like this:
+
+![image](https://user-images.githubusercontent.com/54183001/165050042-8895214c-56cd-4e41-b9c2-40c35313360d.png)
+
+You can clearly see that the chargeback rate of the test group is much smaller than that of the control group. Suggesting that users calling in to cancel may produce a lower chargeback rate.
+
+Thus make sure this is statistically significant a ________ test was performed.
+
 ## Future Work
 Including, datetime data would provide further context for this statistical analysis. Additionally, more investigation into the the users with multiple transactions could provide profitable insights. In hindsight, I also would have like to do an analysis on the proper sample sizes for this kind of test and to determine whether a balanced dataset would be more beneficial.
