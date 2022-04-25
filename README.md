@@ -29,9 +29,20 @@
 * transaction_type : is the transaction type for a transaction, can be REBILL, CHARGEBACK or REFUND
 * transaction_amount : is the amount generated for a transaction, this can be a negative value
 
+* In the table testsamples.csv, was
+
 ## **Data Preparation:**
 
 
 ## **Feature Engineering:**
 
 ## **Table Outputs & Aggregations:**
+### Question 1: What is the aproximate probability distribution between the test group and the control group?
+
+### Question 2: Is a user that must call-in to cancel more likely to generate at least 1 addition REBILL?
+
+### Question 3:Is a user that must call-in to cancel more likely to generate more revenues?
+
+### Question 4:Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
+
+## Future Work
