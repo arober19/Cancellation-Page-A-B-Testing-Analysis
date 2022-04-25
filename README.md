@@ -36,7 +36,7 @@
 
 ## **Feature Engineering:**
 
-## **Table Outputs & Aggregations:**
+## **Visualizations, Conclusions & Aggregations:**
 ### Question 1: What is the aproximate probability distribution between the test group and the control group?
 
 ### Question 2: Is a user that must call-in to cancel more likely to generate at least 1 addition REBILL?
