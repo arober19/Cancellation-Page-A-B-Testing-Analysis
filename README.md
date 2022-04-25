@@ -89,16 +89,23 @@ Taking the previusly merged samples data frame in Question 2 the chargeback rate
 
 |index|test\_group|chargeback\_rate|
 |---|---|---|
-|0|0|0\.05504505835426208|
-|1|1|0\.016683230270906946|
+|0|0|1\.2263302222132085e-06|
+|1|1|1\.1245857951403403e-06|
 
 Which when plotted out looks like this:
 
-![image](https://user-images.githubusercontent.com/54183001/165050042-8895214c-56cd-4e41-b9c2-40c35313360d.png)
+![image](https://user-images.githubusercontent.com/54183001/165116576-67e35fd0-af44-4aa0-947e-9de020106f73.png)
 
-You can clearly see that the chargeback rate of the test group is much smaller than that of the control group. Suggesting that users calling in to cancel may produce a lower chargeback rate.
+You can see that the chargeback rate of the test group slightly smaller than that of the control group however it is almost negligible. Suggesting that users calling in to cancel prouce the same chargeback rate as users using a web page form to cancel.
 
-Thus make sure this is statistically significant a ________ test was performed.
+Thus make sure this is statistically significant a z-test was performed which gave the follwing results:
+
+z statistic: 0.00
+p-value: 1.000
+ci 95% for control group: [0.000, 0.002]
+ci 95% for test group: [0.000, 0.002]
+
+With a p-value well over a= 0.05 we failed to reject the null hypothesis.The test group performed approximately the same as the control group. In conclusion the users that must call in to cancel are not more likely to produce a higher chargeback rate.
 
 ## Future Work
 Including, datetime data would provide further context for this statistical analysis. Additionally, more investigation into the the users with multiple transactions could provide profitable insights. In hindsight, I also would have like to do an analysis on the proper sample sizes for this kind of test and to determine whether a balanced dataset would be more beneficial.
