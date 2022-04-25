@@ -29,7 +29,7 @@ An interesting insight while exploring the data were when it came to users that 
 ## **Visualizations, Conclusions & Aggregations:**
 ### Question 1: What is the aproximate probability distribution between the test group and the control group?
 
-Looking purely at the testsamples.csv table of the 59721 samples, 44886 of them belonged to the control group while 14835 went to the test group. This produces a 0.24840508363892097 test sample rate. By using a p-value of the test sample rate, an N value of the tital sample size of 59721 and running these values through a binomial distibution due to the ouputs being either 1 of 2 options. We get the following probability distribution:
+Looking purely at the testsamples.csv table of the 59721 samples, 44886 of them belonged to the control group while 14835 went to the test group. This produces a 0.24840508363892097 test sample rate. While using the test group samples as successes in this scenario as they are indicated by values of 1 and using a p-value of the test sample rate, an N value of the tital sample size of 59721 and running these values through a binomial distibution due to the ouputs being either 1 of 2 options. We get the following probability distribution:
 
 ![image](https://user-images.githubusercontent.com/54183001/165035402-6ae43359-76b1-4dee-a34c-5013d44991f8.png)
 
