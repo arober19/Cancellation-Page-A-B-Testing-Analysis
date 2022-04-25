@@ -79,4 +79,4 @@ In this case since, revenue is a non-binomial metric the Mann-Whitney-Wilcoxon r
 ### Question 4:Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
 
 ## Future Work
-Including, datetime data would provide further context for this statistical analysis. Additionally, more investigation into the the users with multiple transactions could provide profitable insights. In hindsight, I also would have like to do an analysis on the proper sample sizes for this ind of test and to determine whether a balanced dataset would be more beneficial in this A/B test.
+Including, datetime data would provide further context for this statistical analysis. Additionally, more investigation into the the users with multiple transactions could provide profitable insights. In hindsight, I also would have like to do an analysis on the proper sample sizes for this kind of test and to determine whether a balanced dataset would be more beneficial.
