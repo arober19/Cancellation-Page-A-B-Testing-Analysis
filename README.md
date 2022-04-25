@@ -40,7 +40,6 @@ In order to assess the rebill rate, the transaction data was grouped together by
 test_group	| rebill_rate	| std_deviation	| std_error
   --- 	 |	 ---   |    ---   |   ---   |
    0	       |     0.021	 |     0.143	    |  0.001
-  ---   |  ---   |   ---    |   ---   |
    1	       |     0.105	 |     0.306	    |  0.003
 
 Plotting this out gave the following:
