@@ -24,7 +24,15 @@
 ## **Data Preparation, Feature Engineering & Exploratory Data Analysis Observations:**
 In order to manipulate the data as a whole, new features were created for each transaction type( REBILL, CHARGEBACK, REFUND) and defaulted to values of zero while the original transaction type column was deleted. Additionally the two tables were merged in 2 seperate ways to allow for further investigation into each proposed question.
 
-An interesting insight while exploring the data were when it came to users that had multiple transactions of any kind to their sample id, the control group users had to cancel via a web page form on average had much more multiple transaction users with an average of 3.75 transactions compared to the test group having to call in with an average of 2.06.
+An interesting insight while exploring the data were when it came to users that had multiple transactions of any kind to their sample id, the control group users who had to cancel via a web page form on average had much higher transactions per user with an average of 3.75 transactions per sample id compared to the test group which had to call in with an average of 2.06 transaction per sample id. 
+
+![image](https://user-images.githubusercontent.com/54183001/165129425-154502d6-ff50-4e67-8be1-e370ff4ad0b4.png)
+
+![image](https://user-images.githubusercontent.com/54183001/165129450-e755afe2-4537-46cd-aa3c-6a93262b74dd.png)
+
+Based of the distribution of the frequency of multiple transactions from the control group to the test it appears that the test group falls off quickly after the first transaction compared to the control group distribution which does not skew as heavily towards the lower recurring transaction numbers.
+
+This potentially suggests that after initially being billed those must call in to cancel are more likely to go through with cancellation afterwards where as those who must use the web form to cancel are more likely to continue to be billed further. More analysis is required on this statement. 
 
 ## **Visualizations, Conclusions & Aggregations:**
 ### Question 1: What is the aproximate probability distribution between the test group and the control group?
