@@ -24,7 +24,7 @@
 ## **Data Preparation, Feature Engineering & Exploratory Data Analysis Observations:**
 In order to manipulate the data as a whole, new features were created for each transaction type( REBILL, CHARGEBACK, REFUND) and defaulted to values of zero while the original transaction type column was deleted. Additionally the two tables were merged in 2 seperate ways to allow for further investigation into each proposed question.
 
-An interesting insight while exploring the data were when it came to users that had multiple transactions to their sample id, the control group users had to cancel via a web page form on average had much more multiple transaction users with an average of 3.75 transactions compared to the test group having to call in with an average of 2.06.
+An interesting insight while exploring the data were when it came to users that had multiple transactions of any kind to their sample id, the control group users had to cancel via a web page form on average had much more multiple transaction users with an average of 3.75 transactions compared to the test group having to call in with an average of 2.06.
 
 ## **Visualizations, Conclusions & Aggregations:**
 ### Question 1: What is the aproximate probability distribution between the test group and the control group?
