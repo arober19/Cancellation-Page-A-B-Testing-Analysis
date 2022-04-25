@@ -26,9 +26,9 @@ In order to manipulate the data as a whole, new features were created for each t
 
 An interesting insight while exploring the data were when it came to users that had multiple transactions of any kind to their sample id, the control group users who had to cancel via a web page form on average had much higher transactions per user with an average of 3.75 transactions per sample id compared to the test group which had to call in with an average of 2.06 transaction per sample id. 
 
-![image](https://user-images.githubusercontent.com/54183001/165129425-154502d6-ff50-4e67-8be1-e370ff4ad0b4.png)
+![image](https://user-images.githubusercontent.com/54183001/165142131-5f859930-2219-4a07-aed6-ab4b2209876f.png)
 
-![image](https://user-images.githubusercontent.com/54183001/165129450-e755afe2-4537-46cd-aa3c-6a93262b74dd.png)
+![image](https://user-images.githubusercontent.com/54183001/165142233-920b05bf-89df-4d94-a94d-6263a2f4df07.png)
 
 Based off of the distribution of the frequency of recurring transactions from the control group to the test group, it appears that the test group falls off quickly after first transactions compared to the control group distribution which does not skew as heavily towards the lower recurring transactions.
 
@@ -53,7 +53,7 @@ test_group	| rebill_rate	| std_deviation	| std_error
 
 Plotting this out gave the following:
 
-![image](https://user-images.githubusercontent.com/54183001/165036709-052d52b1-dccb-41a4-9e15-582a58198d60.png)
+![image](https://user-images.githubusercontent.com/54183001/165142498-40f01cee-40eb-47d4-a0e5-d6c3e10f6813.png)
 
 As you can see there the rebill rate for users that needed to call in to cancel are significanty higher however in order to confirm this a statistical significance test was performed.
 
@@ -79,7 +79,7 @@ test_group	|  revenue_rate  | 	std_deviation	  |  std_error
     
 Again showing this as a barplot produces:
 
-![image](https://user-images.githubusercontent.com/54183001/165039998-dee24756-808f-4606-b0e0-b341b1be94fa.png)
+![image](https://user-images.githubusercontent.com/54183001/165142745-d3eb9b10-9e35-4e6f-bc1c-2f651bea2dc8.png)
 
 Here the test group is shown to have a significantly large revenue rate compared to the control group but once again must go throuhg a statistical significance method.
 
@@ -102,7 +102,7 @@ Taking the previusly merged samples data frame in Question 2 the chargeback rate
 
 Which when plotted out looks like this:
 
-![image](https://user-images.githubusercontent.com/54183001/165116576-67e35fd0-af44-4aa0-947e-9de020106f73.png)
+![image](https://user-images.githubusercontent.com/54183001/165142874-edda25b0-d04c-4743-8dcd-63b488cc34a9.png)
 
 You can see that the chargeback rate of the test group is slightly smaller than that of the control group however it is almost negligible. Suggesting that users calling in to cancel produce the same chargeback rate as users using a web page form to cancel.
 
