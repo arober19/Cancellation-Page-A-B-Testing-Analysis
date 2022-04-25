@@ -30,21 +30,21 @@ An interesting insight while exploring the data were when it came to users that 
 
 ![image](https://user-images.githubusercontent.com/54183001/165129450-e755afe2-4537-46cd-aa3c-6a93262b74dd.png)
 
-Based of the distribution of the frequency of multiple transactions from the control group to the test it appears that the test group falls off quickly after the first transaction compared to the control group distribution which does not skew as heavily towards the lower recurring transaction numbers.
+Based off of the distribution of the frequency of recurring transactions from the control group to the test group, it appears that the test group falls off quickly after first transactions compared to the control group distribution which does not skew as heavily towards the lower recurring transactions.
 
-This potentially suggests that after initially being billed those must call in to cancel are more likely to go through with cancellation afterwards where as those who must use the web form to cancel are more likely to continue to be billed further. More analysis is required on this statement. 
+This potentially suggests that after initially being billed those who must call in to cancel are more likely to go through with cancellation afterwards where as those who must use the web form to cancel are more likely to continue to be billed further. More analysis is required on this statement. 
 
 ## **Visualizations, Conclusions & Aggregations:**
 ### Question 1: What is the aproximate probability distribution between the test group and the control group?
 
-Looking purely at the testsamples.csv table of the 59721 samples, 44886 of them belonged to the control group while 14835 went to the test group. This produces a 0.24840508363892097 test sample rate. While using the test group samples as successes in this scenario as they are indicated by values of 1 and using a p-value of the test sample rate, an N value of the tital sample size of 59721 and running these values through a binomial distibution due to the ouputs being either 1 of 2 options. We get the following probability distribution:
+Looking purely at the testsamples.csv table of the 59721 samples, 44886 of them belonged to the control group while 14835 went to the test group. This produces a 0.24840508363892097 test sample rate. The test group samples are treated as successes in this scenario as they are indicated by values of 1. A binomial distribution was used due to the outputs only being either 1 of 2 options. Using the test sample rate as the p-value and the total sample size of 59721 for our value n, we get the following probability distribution:
 
 ![image](https://user-images.githubusercontent.com/54183001/165035402-6ae43359-76b1-4dee-a34c-5013d44991f8.png) 
 
-As you can see from the plot the peak of the distribution sits around the 15000 mark, this make sense due to it being the outcome of the random asignment of value in the A/B test. This is followed by steep drop offs on either side of the peak due to the large sample size.
+As you can see from the plot the peak of the distribution sits around the 15000 mark, this make sense due to it being the outcome of the random assignment of values in the A/B test. This is followed by steep drop offs on either side of the peak due to the large sample size.
 ### Question 2: Is a user that must call-in to cancel more likely to generate at least 1 addition REBILL?
 
-In order to assess the rebill rate, the transaction data was grouped together by the sample id and the mean of the rebill values were taken. This allowed the transaction data to be match to the sample data using the sample_id column. After that the rebill rate along with the standard deviation and standard error was calculated to be:
+In order to assess the rebill rate, the transaction data was grouped together by the sample id and the mean of the rebill values were taken. This allowed the transaction data to be matched to the sample data using the sample_id column. After that the rebill rate along with the standard deviation and standard error was calculated to be:
 
 test_group	| rebill_rate	| std_deviation	| std_error
   --- 	 |	 ---   |    ---   |   ---   |
@@ -70,7 +70,7 @@ Since our p-value of 0.000 is well under our a = 0.05 we may reject the null hyp
 
 ### Question 3: Is a user that must call-in to cancel more likely to generate more revenues?
 
-Looking at the revenue in an equivalent manner, this time the transaction data was grouped together by sample id however this time a summation of the transaction amounts were taken. After this it was merge into the sample data table. The revenue per user rate was calculated as well as the std deviation and std error:
+Looking at the revenue in an equivalent manner, this time the transaction data was grouped together by sample id however this time a summation of the transaction amounts were taken. After this it was merged into the sample data table. The revenue per user rate was calculated as well as the std deviation and std error:
 
 test_group	|  revenue_rate  | 	std_deviation	  |  std_error
 ---  |    ---   |   ---    |    ---    | 
@@ -81,9 +81,9 @@ Again showing this as a barplot produces:
 
 ![image](https://user-images.githubusercontent.com/54183001/165039998-dee24756-808f-4606-b0e0-b341b1be94fa.png)
 
-Here the test group is shown to have a significantly large revenue rate compared to the control group but once again must go throuhg a statistical significane method.
+Here the test group is shown to have a significantly large revenue rate compared to the control group but once again must go throuhg a statistical significance method.
 
-In this case since, revenue is a non-binomial metric the Mann-Whitney-Wilcoxon rank-sum test was used rather than a z-test.
+In this case since, revenue is a non-binomial metric and the Mann-Whitney-Wilcoxon rank-sum test was used rather than a z-test.
 
 Here are the results:
 
@@ -104,9 +104,9 @@ Which when plotted out looks like this:
 
 ![image](https://user-images.githubusercontent.com/54183001/165116576-67e35fd0-af44-4aa0-947e-9de020106f73.png)
 
-You can see that the chargeback rate of the test group slightly smaller than that of the control group however it is almost negligible. Suggesting that users calling in to cancel prouce the same chargeback rate as users using a web page form to cancel.
+You can see that the chargeback rate of the test group is slightly smaller than that of the control group however it is almost negligible. Suggesting that users calling in to cancel produce the same chargeback rate as users using a web page form to cancel.
 
-Thus make sure this is statistically significant a z-test was performed which gave the follwing results:
+Thus, making sure this is statistically significant a z-test was performed which gave the follwing results:
 
 z statistic: 0.00
 p-value: 1.000
@@ -116,4 +116,4 @@ ci 95% for test group: [0.000, 0.002]
 With a p-value well over a= 0.05 we failed to reject the null hypothesis.The test group performed approximately the same as the control group. In conclusion the users that must call in to cancel are not more likely to produce a higher chargeback rate.
 
 ## Future Work
-Including, datetime data would provide further context for this statistical analysis. Additionally, more investigation into the the users with multiple transactions could provide profitable insights. In hindsight, I also would have like to do an analysis on the proper sample sizes for this kind of test and to determine whether a balanced dataset would be more beneficial.
+Including datetime data would provide further context for this statistical analysis. Additionally, more investigation into the the users with multiple transactions could provide profitable insights. In hindsight, I also would have like to do an analysis on the proper sample sizes for this kind of test and to determine whether a balanced dataset would be more beneficial.
