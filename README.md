@@ -24,7 +24,7 @@
 ## **Data Preparation, Feature Engineering & Exploratory Data Analysis Observations:**
 In order to manipulate the data as a whole, new features were created for each transaction type( REBILL, CHARGEBACK, REFUND) and defaulted to values of zero while the original transaction type column was deleted. Additionally the two tables were merged in 2 seperate ways to allow for further investigation into each proposed question.
 
-Some interesting insights while eploring the data were
+Some interesting insights while exploring the data were
 
 ## **Visualizations, Conclusions & Aggregations:**
 ### Question 1: What is the aproximate probability distribution between the test group and the control group?
