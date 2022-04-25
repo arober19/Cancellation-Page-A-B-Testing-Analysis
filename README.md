@@ -19,7 +19,7 @@
 
 ## **Current State:**
 
-* The table testsamples.csv consisted of 59721 rows and 2 columns indicating the the sample id and test group. The table transdata.csv consisted of 7430 rows and 4 columns indicating the transaction id, sample id, transaction type and transaction amount. While looking for errors in the data no duplicate values or rows were found as well as zero Nan or null values were identified. It seems little to no data cleaning was required.
+The table testsamples.csv consisted of 59721 rows and 2 columns indicating the the sample id and test group. The table transdata.csv consisted of 7430 rows and 4 columns indicating the transaction id, sample id, transaction type and transaction amount. While looking for errors in the data no duplicate values or rows were found as well as zero Nan or null values were identified. It seems little to no data cleaning was required.
 
 ## **Data Preparation, Feature Engineering & Exploratory Data Analysis Observations:**
 In order to manipulate the data as a whole, new features were created for each transaction type( REBILL, CHARGEBACK, REFUND) and defaulted to values of zero while the original transaction type column was deleted. Additionally the two tables were merged in 2 seperate ways to allow for further investigation into each proposed question.
