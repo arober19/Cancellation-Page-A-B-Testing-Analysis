@@ -37,10 +37,11 @@ As you can see from the plot the peak of the distribution sits around the 15000 
 
 In order to assess the rebill rate, the transaction data was grouped together by the sample id and the mean of the rebill values were taken. This allowed the transaction data to be match to the sample data using the sample_id column. After that the rebill rate along with the standard deviation and standard error was calculated to be:
 
-test_group	 rebill_rate	 std_deviation	 std_error
- 	 	 
-   0	            0.021	      0.143	      0.001
-   1	            0.105	      0.306	      0.003
+test_group	| rebill_rate	| std_deviation	| std_error
+  --- 	 |	 ---   |    ---   |   ---   |
+   0	       |     0.021	 |     0.143	    |  0.001
+  ---   |  ---   |   ---    |   ---   |
+   1	       |     0.105	 |     0.306	    |  0.003
 
 Plotting this out gave the following:
 
@@ -57,7 +58,7 @@ p-value: 0.000
 ci 95% for control group: [0.020, 0.022]
 ci 95% for test group: [0.100, 0.110]
 
-Since our p-value of 0.000 is well under our a = 0.05 we may reject the null hypothesis and this means that the test group performed better than the control group. There yes user that must call in to cancel are more likely to generate at least 1 additional rebill.
+Since our p-value of 0.000 is well under our a = 0.05 we may reject the null hypothesis and this means that the test group performed better than the control group. Therefore yes, users that must call in to cancel are more likely to generate at least 1 additional rebill.
 
 ### Question 3:Is a user that must call-in to cancel more likely to generate more revenues?
 
