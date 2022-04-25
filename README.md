@@ -39,7 +39,7 @@ This potentially suggests that after initially being billed those who must call 
 
 Looking purely at the testsamples.csv table of the 59721 samples, 44886 of them belonged to the control group while 14835 went to the test group. This produces a 0.24840508363892097 test sample rate. The test group samples are treated as successes in this scenario as they are indicated by values of 1. A binomial distribution was used due to the outputs only being either 1 of 2 options. Using the test sample rate as the p-value and the total sample size of 59721 for our value n, we get the following probability distribution:
 
-![image](https://user-images.githubusercontent.com/54183001/165035402-6ae43359-76b1-4dee-a34c-5013d44991f8.png) 
+![image](https://user-images.githubusercontent.com/54183001/165135200-17753bfd-6603-4c2e-b896-a96f733f78da.png)
 
 As you can see from the plot the peak of the distribution sits around the 15000 mark, this make sense due to it being the outcome of the random assignment of values in the A/B test. This is followed by steep drop offs on either side of the peak due to the large sample size.
 ### Question 2: Is a user that must call-in to cancel more likely to generate at least 1 addition REBILL?
