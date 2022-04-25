@@ -46,7 +46,7 @@ Plotting this out gave the following:
 
 ![image](https://user-images.githubusercontent.com/54183001/165036709-052d52b1-dccb-41a4-9e15-582a58198d60.png)
 
-As you can see there the rebill rate for users that needed to call in to cancel are significanty higher however in order to confirm this a satistical significance test was performed.
+As you can see there the rebill rate for users that needed to call in to cancel are significanty higher however in order to confirm this a statistical significance test was performed.
 
 Our null hypothesis being that there is no significant difference between the control group and test group and our alternate hypothesis being that the test group results in at least 1 additional rebill.
 
@@ -61,7 +61,22 @@ Since our p-value of 0.000 is well under our a = 0.05 we may reject the null hyp
 
 ### Question 3:Is a user that must call-in to cancel more likely to generate more revenues?
 
+Looking at the revenue in an equivalent manner, this time the transaction data was grouped together by sample id however this time a summation of the transaction amounts were taken. After this it was merge into the sample data table. The revenue per user rate was calculated as well as the std deviation and std error:
+
+test_group	|  revenue_rate  | 	std_deviation	  |  std_error
+	 	---  |    ---   |   ---    |    ---    | 
+    0	     |     2.001	     |     20.447	      |  0.097
+    1	     |     6.433	     |     25.704	      |  0.211
+    
+Again showing this as a barplot produces:
+
+![image](https://user-images.githubusercontent.com/54183001/165039998-dee24756-808f-4606-b0e0-b341b1be94fa.png)
+
+Here the test group is shown to have a significantly large revenue rate compared to the control group but once again must go throuhg a statistical significane method.
+
+In this case since, revenue is a non-binomial metric the Mann-Whitney-Wilcoxon rank-sum test rather than a z-test.
+
 ### Question 4:Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
 
 ## Future Work
-Including, datetime data would provide further context for this statistical analysis. Additionally, more investigation into the the users with multiple transactions could provide profitable insights.
+Including, datetime data would provide further context for this statistical analysis. Additionally, more investigation into the the users with multiple transactions could provide profitable insights. In hindsight, I also would have like to do an analysis on the proper sample sizes for this ind of test and to determine whether a balanced dataset would be more beneficial in this A/B test.
