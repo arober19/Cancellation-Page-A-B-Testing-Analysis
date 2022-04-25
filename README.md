@@ -64,7 +64,7 @@ Since our p-value of 0.000 is well under our a = 0.05 we may reject the null hyp
 Looking at the revenue in an equivalent manner, this time the transaction data was grouped together by sample id however this time a summation of the transaction amounts were taken. After this it was merge into the sample data table. The revenue per user rate was calculated as well as the std deviation and std error:
 
 test_group	|  revenue_rate  | 	std_deviation	  |  std_error
-	 	---  |    ---   |   ---    |    ---    | 
+---  |    ---   |   ---    |    ---    | 
     0	     |     2.001	     |     20.447	      |  0.097
     1	     |     6.433	     |     25.704	      |  0.211
     
