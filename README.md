@@ -74,7 +74,13 @@ Again showing this as a barplot produces:
 
 Here the test group is shown to have a significantly large revenue rate compared to the control group but once again must go throuhg a statistical significane method.
 
-In this case since, revenue is a non-binomial metric the Mann-Whitney-Wilcoxon rank-sum test rather than a z-test.
+In this case since, revenue is a non-binomial metric the Mann-Whitney-Wilcoxon rank-sum test was used rather than a z-test.
+
+Here are the results:
+
+MannwhitneyuResult(statistic=1428270492.0, pvalue=0.0)
+
+As this produced a p-value of essentially zero which is well below our a=0.05 threshold we can reject the null hypothesis of the the test and control having similar revenue rates. Thus accepting the alternate hypothesis that the test group performs significantly better. As a result a user that must call-in to cancel is more likely to generate more revenue.
 
 ### Question 4:Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
 
