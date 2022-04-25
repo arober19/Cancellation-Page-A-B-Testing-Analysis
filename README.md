@@ -85,7 +85,7 @@ As this produced a p-value of essentially zero which is well below our a=0.05 th
 
 ### Question 4:Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
 
-Taking the previusly merged samples data frame in Question 2 the chargeback rate per user which is the number of chargebacks divide by the number of rebills was calculated to be:
+Taking the previusly merged samples data frame in Question 2 the chargeback rate per user which is the number of chargebacks divide by the number of rebills again divided by their respective sample sizes was calculated to be:
 
 |index|test\_group|chargeback\_rate|
 |---|---|---|
