@@ -68,7 +68,7 @@ ci 95% for test group: [0.100, 0.110]
 
 Since our p-value of 0.000 is well under our a = 0.05 we may reject the null hypothesis and this means that the test group performed better than the control group. Therefore yes, users that must call in to cancel are more likely to generate at least 1 additional rebill.
 
-### Question 3:Is a user that must call-in to cancel more likely to generate more revenues?
+### Question 3: Is a user that must call-in to cancel more likely to generate more revenues?
 
 Looking at the revenue in an equivalent manner, this time the transaction data was grouped together by sample id however this time a summation of the transaction amounts were taken. After this it was merge into the sample data table. The revenue per user rate was calculated as well as the std deviation and std error:
 
@@ -91,7 +91,7 @@ MannwhitneyuResult(statistic=1428270492.0, pvalue=0.0)
 
 As this produced a p-value of essentially zero which is well below our a=0.05 threshold we can reject the null hypothesis of the the test and control having similar revenue rates. Thus accepting the alternate hypothesis that the test group performs significantly better. As a result a user that must call-in to cancel is more likely to generate more revenue.
 
-### Question 4:Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
+### Question 4: Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
 
 Taking the previusly merged samples data frame in Question 2 the chargeback rate per user which is the number of chargebacks divide by the number of rebills again divided by their respective sample sizes was calculated to be:
 
